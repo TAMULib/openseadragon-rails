@@ -5,8 +5,9 @@
     $('picture[data-openseadragon]').openseadragon();
   }
 
-  $(document).on('page:load', initOpenSeadragon);
-  $(document).ready(initOpenSeadragon);
+  console.log('removed additional initOpenSeadragon');
+  //$(document).on('page:load', initOpenSeadragon);
+  //$(document).ready(initOpenSeadragon);
 
   var handler = 'ready';
   if (typeof Turbolinks !== 'undefined' && Turbolinks.supported) {
